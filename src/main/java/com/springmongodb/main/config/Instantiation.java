@@ -3,6 +3,7 @@ package com.springmongodb.main.config;
 import com.springmongodb.main.domain.Post;
 import com.springmongodb.main.domain.User;
 import com.springmongodb.main.dto.AuthorDTO;
+import com.springmongodb.main.dto.CommentDTO;
 import com.springmongodb.main.repository.PostRepository;
 import com.springmongodb.main.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,6 +41,13 @@ public class Instantiation implements CommandLineRunner {
 
         Post post1 = new Post(null, sdf.parse("25-05-2025"), "Contrato de Captain", "Valor do contrato Captain ficou por R$ 5690.25", new AuthorDTO(paulo));
         Post post2 = new Post(null, sdf.parse("03-07-2025"), "Develop de Captain", "Valor do contrato  ficou por R$ 5680.25", new AuthorDTO(paulo));
+
+        CommentDTO c1 = new CommentDTO("Contrato aprovado", sdf.parse("21-07-2025"), new AuthorDTO(saulo));
+        CommentDTO c2 = new CommentDTO("Teve alguma redução?", sdf.parse("01-07-2025"), new AuthorDTO(jader));
+        CommentDTO c3 = new CommentDTO("Contrato aprovado", sdf.parse("05-07-2025"), new AuthorDTO(jader));
+
+        post1.getComments().addAll(Arrays.asList(c1,c3));
+        post2.getComments().addAll(Arrays.asList(c2));
 
         postRepository.saveAll(Arrays.asList(post1, post2));
 
