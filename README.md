@@ -24,11 +24,11 @@ Este projeto é uma API RESTful desenvolvida com **Java**, **Spring Boot** e **M
 - Realizar associações entre documentos com objetos aninhados e referências
 - Aplicar boas práticas com DTOs e manipulação de exceções
 
----
+--- </br>
 
 ## 🧩 Estrutura do Projeto
 
-src/
+src/ </br>
 ├── config # Carga inicial com CommandLineRunner </br>
 ├── domain # Entidades: User, Post </br>
 ├── dto # Data Transfer Objects: UserDTO, AuthorDTO, CommentDTO </br>
