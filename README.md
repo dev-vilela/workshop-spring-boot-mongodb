@@ -29,12 +29,12 @@ Este projeto é uma API RESTful desenvolvida com **Java**, **Spring Boot** e **M
 ## 🧩 Estrutura do Projeto
 
 src/
-├── config # Carga inicial com CommandLineRunner
-├── domain # Entidades: User, Post
-├── dto # Data Transfer Objects: UserDTO, AuthorDTO, CommentDTO
-├── repository # Interfaces de acesso ao banco
-├── resources # Endpoints REST (controllers)
-├── services # Camada de serviço (lógica de negócio)
+├── config # Carga inicial com CommandLineRunner </br>
+├── domain # Entidades: User, Post </br>
+├── dto # Data Transfer Objects: UserDTO, AuthorDTO, CommentDTO </br>
+├── repository # Interfaces de acesso ao banco </br>
+├── resources # Endpoints REST (controllers) </br>
+├── services # Camada de serviço (lógica de negócio) </br>
 ├── exceptions # Tratamento de exceções personalizadas
 
 
